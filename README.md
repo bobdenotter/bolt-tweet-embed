@@ -1,10 +1,33 @@
-Bolt Extension Starter
+Bolt Tweetembed
 ======================
 
-A starter skeleton for a Bolt Extension
+A simple extension to embed tweets from Twitter in your website. 
 
-To get going run the following command, replacing the last argument with the name of your extension:
+To use, simply copy the 'link to tweet', and put it in a `{{ tweet() }}` tag:
 
-`composer create-project --no-install bolt/bolt-extension-starter <newextname>`  
+```
+{{ tweet('https://twitter.com/BoltCM/status/651792096198795264') }}
+```
 
-For more information, see this page in the Bolt documentation: https://docs.bolt.cm/extensions/config 
+Or, if you're feeling particularly lazy, use: 
+
+```
+{{ tweet(651792096198795264) }}
+```
+
+Note: If you'd like to use this directly from the content editor, Make sure you've enabled `allowtwig: true` in your `contenttypes.yml`. for example: 
+
+```
+entries:
+    name: Entries
+    singular_name: Entry
+    fields:
+        [..]
+        teaser:
+            type: html
+            height: 150px
+            allowtwig: true
+```            
+
+
+
