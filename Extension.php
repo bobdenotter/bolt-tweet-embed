@@ -8,7 +8,6 @@ use Bolt\BaseExtension;
 class Extension extends BaseExtension
 {
 
-
     public function initialize()
     {
         // Twig functions
@@ -36,7 +35,7 @@ class Extension extends BaseExtension
         $res = sprintf(
                 '<blockquote class="twitter-tweet" lang="en"> (loading tweet) <a href="%s">%s</a></blockquote>',
                 $what,
-                $what
+                $what # in the butt.
             );
 
         return new \Twig_Markup($res, 'UTF-8');
