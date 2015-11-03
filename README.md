@@ -9,13 +9,13 @@ To use, simply copy the 'link to tweet', and put it in a `{{ tweet() }}` tag:
 {{ tweet('https://twitter.com/BoltCM/status/651792096198795264') }}
 ```
 
-Or, if you're feeling particularly lazy, use: 
+Or if you're feeling particularly lazy, use: 
 
 ```
 {{ tweet(651792096198795264) }}
 ```
 
-Note: If you'd like to use this directly from the content editor, Make sure you've enabled `allowtwig: true` in your `contenttypes.yml`. for example: 
+Note: If you'd like to use this directly from the content editor, Make sure you've enabled `allowtwig: true` in your `contenttypes.yml`. For example: 
 
 ```
 entries:
