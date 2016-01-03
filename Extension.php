@@ -20,6 +20,11 @@ class Extension extends BaseExtension
         return "Tweetembed";
     }
 
+    public function isSafe()
+    {
+        return true;
+    }
+
     public function tweet($what)
     {
         $this->addSnippet('endofbody', '<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>');
