@@ -15,7 +15,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Bolt\\Extension\\Bobdenotter\\TweetEmbed\\": ""
+            "Bolt\\Extension\\Bobdenotter\\TweetEmbed\\": "src"
         }
     },
     "extra": {
