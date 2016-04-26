@@ -1,10 +1,13 @@
 {
-    "name": "bobdenotter/bolt-tweet-embed",
+    "name": "bobdenotter/tweet-embed",
     "description": "A simple extension to embed tweets from Twitter in your website.",
     "type": "bolt-extension",
     "keywords": [ "tweet", "twitter", "embed" ],
     "require": {
         "bolt/bolt": "^3.0"
+    },
+    "replace": {
+        "bobdenotter/bolt-tweet-embed": "*"
     },
     "license": "MIT",
     "authors": [
